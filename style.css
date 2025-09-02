@@ -1,6 +1,29 @@
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+
 :root {
     --texto: #E0E0E0
 }
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    float: left;
+    margin-right: 30px;
+}
+
+.texto-centralizado {
+  height: 150px; 
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 body {
     font-family: "Roboto"
