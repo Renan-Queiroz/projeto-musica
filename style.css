@@ -33,11 +33,12 @@ body {
 }
 
 
-.musica-lista{
+.musica-lista {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  
 }
 
 .cartao {
@@ -83,4 +84,36 @@ body {
   height: auto;
   border-radius: 10px;
   border: 2px solid #555;
+}
+
+.cartao .iron {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #555;
+}
+
+.spotify {
+  cursor: pointer;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--texto);
+  padding: 1rem;
 }
