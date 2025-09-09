@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
 
 :root {
   --texto: #E0E0E0;
@@ -12,20 +12,19 @@
 body {
   background-color: #121212;
   color: var(--texto);
-  padding: 20px;
-  max-width: 1200px;
+  padding: 1.25rem;
   margin: 0 auto;
 }
 
 .header {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 40px;
+  gap: 0.9rem;
+  margin-bottom: 2.5rem;
 }
 
 .header img.vinil {
-  width: 60px;
+  max-width: 60px;
   height: 60px;
   border-radius: 50%;
 }
@@ -36,27 +35,39 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: center; 
-  gap: 30px; 
+  justify-content: center;
+  gap: 30px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .musica-lista {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media QUERY */
+@media (max-width:800px) {
+  .musica-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:600px) {
+  .musica-lista {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .cartao {
   background-color: #1e1e1e;
   border-radius: 12px;
   padding: 20px;
-  width: 250px;
   text-align: center;
+
+  transition: transform 0.5s ease;
 }
 
 .cartao:hover {
@@ -106,7 +117,7 @@ nav ul {
 .spotify {
   cursor: pointer;
   background-color: green;
-  display: inline-flex;;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 4px 6px;
