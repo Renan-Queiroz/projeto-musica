@@ -13,6 +13,8 @@ body {
   background-color: #121212;
   color: var(--texto);
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
